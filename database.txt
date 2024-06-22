@@ -1,0 +1,48 @@
+Membuat Aplikasi Stock Barang Berbasis Web (PHP + MySQL)
+1. Setup Template + setup Database
+2. Registrasi, Login & Logout + setup halaman
+3. session dan cookie
+4. algoritma stock barang, barang masuk, barang keluar
+5. pengulangan untuk menampilkan data dari database
+6. penambahan fitur update dan delete
+7. PDF 
+8. Alert
+
+
+DB : sistokbarang
+
+Nama Tabel : 
+
+1. login : - iduser (int) AUTO_INCREMENT,
+           - email (varchar),
+           - password (varchar)
+
+2. stock : - idbarang (int) AUTO_INCREMENT,
+           - namabarang (varchar),
+           - deskripsi (varchar),
+           - stock (int)
+           - image (varchar, Bawaan : NULL)
+
+3. masuk : - idmasuk (int) AUTO_INCREMENT,
+           - idbarang (int),
+           - tanggal (Jenis : timestamp, Bawaan : current_timestamp() ),
+           - keterangan (varchar)
+           - qty (int)
+
+4. keluar : - idkeluar (int) AUTO_INCREMENT,
+            - idbarang (int),
+            - tanggal (Jenis : timestamp, Bawaan : current_timestamp() ),
+            - penerima (varchar)
+            - qty(int)
+
+5. peminjaman : - idpeminjam (int) AUTO_INCREMENT,
+                - idbarang (int),
+                - tanggalpinjam (jenis: timestamp, Bawaan : current_timestamp()  Deafult : ON UPDATE CURRENT_TIMESTAMP())
+                - qty (int),
+                - peminjam (varchar),
+                - status(varchar) 
+
+
+
+
+
